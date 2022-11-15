@@ -1,13 +1,76 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap;');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+  --primary-color: #F55A5A;
+  --white-color: #fff;
+
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+nav{
+  background-color: var(--primary-color);
+  height: 70px;
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 16px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+nav span{
+  margin-right: 5px;
+}
+
+section{
+  padding: 20px;
+}
+.card{
+  display: flex;
+  align-items: center;
+  max-width: 700px;
+  margin: 20px auto;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+.card--details{
+  margin-left: 20px;
+}
+.card--location{
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.card--location i{
+  color: var(--primary-color)
+}
+.card--location h4{
+  font-weight: 400;
+  margin-right: 16px;
+}
+.card--location a{
+  color: #ccc;
+}
+.card--destination{
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.card--date{
+  font-size: 12px;
+  font-weight: bold;
+}
+.card--description{
+  font-size: 11px;
+  font-weight: 400;
 }
